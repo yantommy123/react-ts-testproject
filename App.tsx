@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Swithc, Router, Route} 'react-route';
 import './style.css';
 
 export default function App() {
@@ -7,9 +8,12 @@ export default function App() {
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
       {
-        <switch>
-          
-        </switch>
+        <Router>
+          <switch>
+            
+          </switch>
+        </Router>
+      
       }
     </div>
   );

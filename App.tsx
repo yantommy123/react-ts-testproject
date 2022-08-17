@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Router, Route, BrowserRouter} from 'react-router-dom';
+import {Route, BrowserRouter} from 'react-router-dom';
 import { Routes } from 'react-router/lib/components';
 import './style.css';
 import { Home } from './components/Home';
@@ -8,8 +8,6 @@ import { About } from './components/About';
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
       {
         <BrowserRouter>
           <Routes>

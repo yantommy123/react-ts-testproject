@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {Route, BrowserRouter} from 'react-router-dom';
-import { Routes } from 'react-router/lib/components';
+import {Route, BrowserRouter, Routes} from 'react-router-dom';
 import './style.css';
 import { Home } from './components/Home';
 import { About } from './components/About';

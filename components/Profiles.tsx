@@ -6,8 +6,11 @@ export const Profiles = () => {
   const [profiles, setProfiles] = React.useState<Person[]>([]);
 
   React.useEffect(() => {
-      const result = getProfile("tom");
-      console.log('result ', result);
+       getProfile("tom").then((res) => {
+         
+        console.log('result ', res.data);
+      });
+    
   });
 
   return (

@@ -1,8 +1,16 @@
 import React=require("react");
+import { getProfile } from "../services/getProfile";
 import { Person, Profile } from "./Profile";
 
-export const Profiles = (props: Person[]) => {
+export const Profiles = () => {
+  const [profiles, setProfiles] = React.useState<Person[]>([]);
+
+  React.useEffect(() => {
+      const result = getProfile("tom");
+      console.log('result ', result);
+  });
+
   return (
-      props.map(item => <Profile { ...item} />)
+      profiles.map(item => <Profile { ...item} />)
   );
 };

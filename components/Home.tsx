@@ -7,7 +7,7 @@ export const Home: React.FC = () => {
   const renderBody = () => {
     return (
       <div>
-        {<Profiles />}
+        {(<Profiles />)}
       </div>
     );
   };

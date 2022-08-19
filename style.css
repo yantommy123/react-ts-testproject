@@ -1,3 +1,10 @@
 h1, p {
   font-family: Lato;
 }
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  background-color: blue;
+}

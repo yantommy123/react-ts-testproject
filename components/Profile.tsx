@@ -1,4 +1,5 @@
 import React=require("react");
+import '../style.css';
 
 export type Person = {
   name: string;
@@ -7,7 +8,7 @@ export type Person = {
 
 export const Profile = (props: Person) => {
   return (
-      <div>
+      <div className = "profile">
         <div>{props.name}</div>
         <div>{props.company}</div>
        </div>

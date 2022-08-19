@@ -13,21 +13,15 @@ export const Profiles = () => {
          };
          const prev: Person[] = [...profiles];
 
-        // setProfiles([person, ...prev])
-      });
+        setProfiles([person])
+      }, []);
 
-      getProfile("david").then((res) => {
-        const person: Person = {
-           name: res.data.name,
-           company: res.data.company
-        };
-        const prev = [...profiles];
-       //setProfiles([person, ...prev])
-     });
     
   });
 
   return (
-      profiles.map(item => <Profile { ...item} />)
+    <tbody>
+      {profiles.map(item => <Profile { ...item} />)}
+    </tbody>
   );
 };
